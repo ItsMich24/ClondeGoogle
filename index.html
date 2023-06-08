@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Clon de Google</title>
+</head>
+<body>
+<!--las CLASES son: Es una manera de etiquetar a tus objetos,
+como si tuvieran un ID, y asi cuando los mandas a llamar para darle un estilo o alguna acción,
+el programa sabe a cual en especifico se esta llamando
+-->
+    <header>
+        <nav><!--Lista de navegacion, Se usa cuando se habla del menu principal-->
+            <ul class="nav-right-section"><!--Lista desordenada-->
+                <!--LI * 4-->
+                <li><a href="https://mail.google.com/mail/?tab=rm&ogbl">Gmail</a></li>
+                <li><a href="https://www.google.com.mx/imghp?hl=es&tab=ri&ogbl">Imagenes</a></li>
+                <li class="menu-icon"><a href="#"></a></li> <!--class="menu-icon = Da referencia al icono que vamos a agregar-->
+                <li><img src="https://lh3.googleusercontent.com/ogw/AOLn63GtmDrS2Wx_IcSb9q253W_gGE0wdyPMU3HMOJDq_w=s32-c-mo"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--LOGO-->
+        <section class="main-logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        </section>
+
+        <!--BARRA DE BUSQUEDA-->
+        <section class="main-input">
+            <div class="main-input-container"><!--Se utiliza principalmente para agrupar y estructurar elementos HTML y aplicar estilos o manipularlos con CSS.
+            -->
+                <span class="search-icon"></span>
+                <input type="text"> <!--Input : Que algo se va a introducir-->
+                <a class="micro-icon" href=""></a>
+                <a class="cam-icon" href=""></a>
+            </div>
+        </section>
+
+        <!--SECCION DE BOTONES-->
+        <section class="main-buttons">
+            <!--primer boton-->
+            <div>
+                <button>
+                    Buscar con Google
+                </button>
+            </div>
+            <!--Segundo boton-->
+            <div>
+                <button>
+                    Voy a tener suerte
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--LISTA IZQUIERDA-->
+        <ul class="footer-left">
+            <li><a href="https://about.google/?utm_source=google-
+                        MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
+            <li><a href="https://www.google.com/intl/es-419_mx/
+                        ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_
+                        source=google.com&utm_medium=referral&utm_
+                        campaign=google_hpafooter&fg=1">Publicidad</a></li>
+            <li><a href="https://www.google.com/services/?subid=ww-ww-et-
+                        g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_
+                        medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a></li>
+            <li><a href="https://google.com/search/howsearchworks/?fg=1">Cómo fúnciona la busqueda</a></li>
+        </ul>
+        
+        <!--LISTA DERECHA-->
+        <ul class="footer-right"> <!--HREF = es para hipervinculos-->
+            <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+            <li><a href="https://policies.google.com/terms?hl=en-MX&fg=1 ">Condiciones</a></li>
+            <li><a href="#">Preferencias</a></li>
+        </ul>
+
+    </footer>
+
+
+</body>
+</html>

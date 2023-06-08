@@ -1,0 +1,208 @@
+body{
+    /*background-image: url(https://e1.pxfuel.com/desktop-wallpaper/854/947/desktop-wallpaper-shinobu-pc.jpg); agrega fondo*/
+    margin: 0;
+    padding: 0;
+    font-size: 13px; /*Cambia tamaño de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;/*Ancho*/
+    height: 60px;/*altura*/
+}
+
+header nav{
+    display: flex;/*flexible de acuerdo a la pantalla*/
+    justify-content: flex-end;/*Que se vayan al fondo*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;/*Altura automatica*/
+    display:flex;/*Pone iconos de manera horizontal ->*/
+    list-style: none; /*A la lista se le quitan los puntos que se ponen por defecto*/
+    justify-content: center;/*justifica el contenido*/
+    align-items: center;/*Alinea el contenido*/
+}
+
+a{
+    text-decoration: none; /*decoracion de texto : ninguno*/
+    cursor: pointer; /*Cambia la flechita a manita del cursor*/
+}
+
+nav .nav-right-section a{
+    margin-right: 19px; /*Separa el texto*/
+    color:black ; /*El color de texto pasa a negro*/
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
+    width: 27px;
+    height: 27px;
+    background-size : contain;/**/
+    background-position: center;
+    background-repeat: none; /*se utiliza para especificar cómo se debe repetir una imagen de fondo en un elemento.*/
+}
+
+nav .nav-right-section img{
+    border-radius: 80px;/*Redondea la imagen*/
+    margin-left : 15px;/*Separa la imagen del icono izquierdo*/
+    width: 35px;
+    height: 35px;
+}
+
+/*Ajusta el logo de google*/
+main{
+    margin-top: 30px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+/*configuracion de barra de busqueda*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 505px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;/*Que desaparezca el border*/
+    outline: none; /*Borra el marguen que sale de la barra*/
+}
+
+main .main-input-container:hover{ /*hover indica que los cambios se ejecutaran en el elemento cuando el mouse 
+    este encima del mismo  
+    hover se utiliza en CSS para aplicar estilos a un 
+    elemento cuando se coloca el cursor sobre él. 
+    Cuando el cursor se sitúa sobre un elemento que tiene la regla :hover aplicada, se activa un cambio 
+    en la apariencia del elemento.*/
+    box-shadow: 0 1px 6px 0 #20212447    ;
+} /*Box-shadow : Efecto lo da como las manesillas del reloj*/
+
+/*Configura el tamaño del icono de busqueda*/
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png    ");
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;/*se utiliza para establecer el espaciado interno
+    (padding) en el lado izquierdo de un elemento , para especificar el espaciado interno en todos los lados
+    de un elemento de manera simultánea.*/
+    background-repeat: no-repeat;/*Para que no se repita*/
+    background-position: center;/*se utiliza para especificar la posición inicial del fondo de un elemento.
+    Permite controlar dónde se colocará la imagen de fondo dentro del elemento en relación con los bordes o el contenido del mismo. */
+    background-size: contain ;/* utiliza para especificar el tamaño de la imagen de fondo.
+    Permite controlar si la imagen se ajusta, se expande, se repite o se adapta al tamaño del elemento. */
+}
+
+main .main-input .cam-icon{
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE    ");
+    width: 18px;
+    height: 18px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;/* es cuando se desea colocar varios elementos 
+    uno al lado del otro, como una lista de elementos de navegación horizontal. */
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 6px;
+    padding: 0 15px;/*El padding es útil para crear espacios alrededor del contenido, 
+    separar visualmente elementos contiguos, proporcionar un margen interno para elementos 
+    con bordes o fondos, y controlar el diseño y la apariencia de una página web.*/
+    margin-right: 12pz;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6c6;/*Se usa para la sombra, pone estilos
+    para cuando el usuario pasa el cursor en el boton*/
+    box-shadow:0 0.5px 1px 0 #000001;
+    cursor: pointer; /*Cambia el cursor*/
+}
+
+footer{
+    width: 100%; /*El 100% hace que se expanda */
+    height: 50px ;
+    background-color: #f2f2f2;
+    position: absolute;/*Este estilo saca al elemento del 
+    flujo normal del documento y lo posiciona en relación con su contenedor 
+    más cercano que tenga una posición distinta de 'static'.
+    Si no existe tal contenedor, se refiere al cuerpo del documento.*/
+    bottom: 0; /*Baja la barra hasta abajo
+    En conjunto con position: absolute;
+    , este estilo coloca la parte inferior del elemento en la línea
+    inferior de su contenedor.*/
+    display: grid;/*Este estilo convierte al elemento en un contenedor de grid,
+    lo que permite aplicar estilos de grid a sus hijos.*/
+    grid-template-columns: 1fr 1fr;/*Separa las listas en columnas , 
+    1fr 1fr;: Esto divide el contenedor de grid en dos columnas de igual ancho. 
+    'fr' es una unidad de medida que representa una fracción del espacio disponible.*/
+    align-items: center;/*Centra verticalmente los elementos del objeto*/
+    font-size: 15px;/*Tamaño de la letra*/
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;/*Hace que las viñetas desaparezcan*/
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;/*justifica el contenido a la izquierda*/
+}
+
+footer .footer-right{
+    justify-self: right; /*Justifica el econtenido a la derecha */
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
